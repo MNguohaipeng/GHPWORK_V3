@@ -27,9 +27,9 @@
     <title>模拟alert和confirm提示框</title>
 </head>
 <body>
-    <input id="add" type="button" value="添加"   />
+    <input id="add" type="button" value="添加" />
     <input id="update" type="button" value="修改" />
- 
+
 </body>
 </html>
 
@@ -58,13 +58,13 @@
             _show: function (title, msg, value, type, callback) {
 
                 var _html = "";
- 
+
                 _html += '<article class="T_Mein">';
                 _html += '<header class="T_Header">';
                 _html += title + ' <span class="fa fa-ban  " style="float:right;border:1px rgba(98, 152, 130, 0.61) solid;padding:3px;color:rgb(255, 0, 0);cursor:pointer"  ></span >';
                 _html += '</header > ';
- 
-                _html += '<div style="padding: 5px; " class="T_Bc_NeoRong">添加成功</div>';
+
+                _html += '<div style="padding: 5px; " class="T_Bc_NeoRong">' + msg + '</div>';
 
                 _html += '<footer style="vertical-align:bottom">';
 
@@ -72,18 +72,19 @@
                 if (type == "alert") {
                     _html += '<button id="mb_btn_ok" class="B_Success" style="width:100%">确认</button></div>';
                 }
-            
+
 
                 if (type == "confirm") {
-                
+
 
                     _html += '<div><button id="mb_btn_ok" class="B_Success" style="width:50%">确认</button>';
                     _html += '<button id="mb_btn_no" class="B_Error" style="width:50%">取消</button></div>';
-              
+
                 }
+
                 _html += '</footer></article>';
 
-                
+
                 switch (type) {
                     case 'alert':
 
@@ -114,6 +115,9 @@
 
 
                 }
+
+                $("body").append(_html);
+
             },
             _hide: function () {
                 $("#mb_box,#mb_con").remove();
@@ -127,14 +131,11 @@
         zdconfirm = function (title, message, callback) {
             $.alerts.confirm(title, message, callback);
         }
- 
-
 
     })(jQuery);
 
     $("#add").bind("click", function () {
-        // $.MsgBox.Alert("消息", "哈哈，添加成功！");
-        alert(1);
+
         zdalert('系统提示', '请输入正确数值', function () {
 
 
@@ -159,7 +160,39 @@
 
 
     });
-   
+
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
