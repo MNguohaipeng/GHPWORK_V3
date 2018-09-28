@@ -1,0 +1,459 @@
+﻿
+@{
+    /**/
+
+
+    ViewBag.Title = "HomePage";
+
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的框架 V3</title>
+    <link rel="stylesheet/less" href="~/Content/GHP_Main.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<link href="~/Content/GHP_Main.css" rel="stylesheet" />*@
+
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 99%;
+        }
+
+        .G_Main {
+            margin: 0.1%;
+            padding: 0;
+            background-image: url('../Images/Backimg2.jpg');
+            height: 100%;
+        }
+
+        .G_Header {
+            padding: 14px;
+            background-color: rgba(128, 128, 128, 0.50);
+            color: #fff;
+        }
+
+        .Left_Menu {
+            background-color: rgba(255, 255, 255, 0.39);
+            margin: 0px;
+            padding: 0px;
+            height: 94%;
+        }
+
+        .G_Main_Left_Menu_Menu {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            border-top: 1px #fff solid;
+        }
+
+
+        .G_Left_Meon_Option {
+            height: 83%;
+            width: 5px;
+            background-color: #fff;
+        }
+
+        .G_Left_Meon_Option {
+            /*position: absolute;
+            top: 5.8%;
+            left: 15%;
+            padding-top: 5%;*/
+        }
+
+        .N_Menu_Table {
+            width: 100%;
+            height: 95.7%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+            .N_Menu_Table tr {
+                margin: 0px;
+                padding: 0px;
+            }
+
+                .N_Menu_Table tr td {
+                    margin: 0px;
+                    padding: 0px;
+                    height: 100%
+                }
+
+            .N_Menu_Table tbody {
+                margin: 0px;
+                padding: 0px;
+                border: 0;
+            }
+
+            .N_Menu_Table tr td {
+                margin: 0px;
+                padding: 0px;
+                border: 0;
+            }
+
+        .N_Body {
+            width: 100%;
+            background-color: #fff;
+            height: 95%;
+            overflow: auto;
+        }
+
+        .N_Header_Ul {
+            list-style: none;
+            margin: 0px;
+            overflow: auto;
+            zoom: 1;
+        }
+
+            .N_Header_Ul li {
+                float: left;
+                width: 33.33%;
+            }
+
+        .C_Hide_LegtMenu:hover {
+            cursor: pointer;
+        }
+        /*滚动条样式*/
+        .N_Body::-webkit-scrollbar { /*滚动条整体样式*/
+            width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+
+        .N_Body::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+
+        .N_Body::-webkit-scrollbar-track { /*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .N_Body_DaoHang {
+            background-color: rgba(175, 215, 211, 0.57);
+            padding: 10px;
+        }
+
+        .S_rotateX0 {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg); /* Firefox */
+        }
+
+
+        .S_rotateX10 {
+            transform: rotate(10deg);
+            -webkit-transform: rotate(10deg);
+            -moz-transform: rotate(10deg); /* Firefox */
+        }
+
+
+        .S_rotateX20 {
+            transform: rotate(20deg);
+            -webkit-transform: rotate(20deg);
+            -moz-transform: rotate(20deg); /* Firefox */
+        }
+
+        .S_rotateX40 {
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg); /* Firefox */
+        }
+
+        .S_rotateX60 {
+            transform: rotate(60deg);
+            -webkit-transform: rotate(60deg);
+            -moz-transform: rotate(60deg); /* Firefox */
+        }
+
+        .S_rotateX80 {
+            transform: rotate(80deg);
+            -webkit-transform: rotate(80deg);
+            -moz-transform: rotate(80deg); /* Firefox */
+        }
+
+        .S_rotateX100 {
+            transform: rotate(100deg);
+            -webkit-transform: rotate(100deg);
+            -moz-transform: rotate(100deg); /* Firefox */
+        }
+
+        .S_rotateX120 {
+            transform: rotate(120deg);
+            -webkit-transform: rotate(120deg);
+            -moz-transform: rotate(120deg); /* Firefox */
+        }
+
+        .S_rotateX140 {
+            transform: rotate(140deg);
+            -webkit-transform: rotate(140deg);
+            -moz-transform: rotate(140deg); /* Firefox */
+        }
+
+        .S_rotateX160 {
+            transform: rotate(160deg);
+            -webkit-transform: rotate(160deg);
+            -moz-transform: rotate(160deg); /* Firefox */
+        }
+
+        .S_rotateX180 {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg); /* Firefox */
+        }
+
+        .S_rotateX200 {
+            transform: rotate(200deg);
+            -webkit-transform: rotate(200deg); /* Safari and Chrome */
+            -moz-transform: rotate(200deg); /* Firefox */
+        }
+
+        .C_Hide_lift_Sj {
+            width: 10px;
+            height: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .C_Hide_LegtMenu {
+            text-align: center;
+         
+        }
+
+        .C_Info_Menu_Hide {
+            text-align: center;
+        }
+
+
+        .G_Main_Left_Hide_Menu_Menu {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            border-top: 1px #fff solid;
+            border-bottom:0;
+        }
+
+
+        .G-Main-Left-Menu-Menu-Li {
+            line-height: 40px;
+            border: 1px #fff solid;
+            border-top: 0;
+            border-bottom: 1px #fff solid;
+            border-right: 0;
+        }
+
+        .G_Main_Ej_Menu {
+            margin: 0px;
+            padding: 0px;
+            padding-left: 30px;
+            list-style: none;
+            line-height: 40px;
+            border-bottom: 0;
+        }
+
+            .G_Main_Ej_Menu li {
+                border: 1px #fff solid;
+                border-right: 0;
+                border-bottom:0;
+                background-color:rgba(175, 215, 211, 0.57);
+            }
+
+        .G-Menu-Info {
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        .G_Main_SAN_Menu {
+            margin: 0px;
+            padding: 0px;
+            padding-left: 30px;
+            list-style: none;
+            line-height: 40px;
+        }
+
+            .G_Main_SAN_Menu li {
+                margin: 0px;
+                padding: 0px;
+                border: 1px rgba(255, 255, 255, 0.39) solid;
+                padding-left: 25px;
+                list-style: none;
+                line-height: 30px;
+                border-bottom: 0;
+                border-right: 0;
+                background-color:rgba(174, 169, 239, 0.61)
+            }
+    </style>
+    <script src="~/Scripts/angular.js"></script>
+
+</head>
+<body>
+
+
+    <article class="G_Main" ng-app="GHPAPP" ng-controller="GHPCONTROLLER">
+        <header class="G_Header">
+
+            <ul class="N_Header_Ul">
+                <li><span>郭海鹏的个人框架</span> </li>
+                <li style="text-align:center"><span>暂时保留位置</span> </li>
+                <li style="text-align:right"><span>当前用户：管理员</span><span class="fa fa-chevron-down"></span></li>
+
+            </ul>
+
+        </header>
+
+        <table class="N_Menu_Table">
+            <tr>
+                <td class="Left_Menu" width="{{Left}}" valign="top">
+                    <div class="C_Info_Menu" ng-if="C_MenuStatus">
+                        <menu label="text" class="G_Main_Left_Menu_Menu">
+                            <li class="G-Main-Left-Menu-Menu-Li" ng-repeat="x in Menu">
+                                <table>
+                                    <tr>
+                                        <td width="5%"><span class="{{x.icon}}"></span></td>
+                                        <td width="89%">&nbsp;{{x.name}}</td>
+                                        <td width="5%"><span class="fa fa-angle-right G_Main_Table_LeftMain_Menu_li_MenuIcon"></span></td>
+                                    </tr>
+                                </table>
+                                <ul class="G_Main_Ej_Menu">
+                                    <li ng-repeat="y in x.Info">
+                                        <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>{{y.name}}
+                                        <ul class="G_Main_SAN_Menu">
+
+                                            <li ng-repeat="z in y.Info"> <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>{{z.name}}</li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            @*<li>
+
+                                    <ul class="G_Main_Ej_Menu">
+
+                                        <li> <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>二级菜单1</li>
+                                        <li> <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>二级菜单1</li>
+                                        <li> <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>二级菜单1</li>
+                                        <li> <span class="G-Menu-Info fa fa-reply S_rotateX180">&nbsp;&nbsp;&nbsp;</span>二级菜单1</li>
+                                    </ul>
+                                </li>*@
+
+                        </menu>
+                    </div>
+
+                    <div class="C_Info_Menu_Hide" ng-if="!C_MenuStatus">
+                        <menu class="G_Main_Left_Hide_Menu_Menu">
+                            <li>
+                                <span class="fa fa-address-card"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-address-card"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-address-card"></span>
+                            </li>
+
+                            <li>
+                                <span class="fa fa-address-card"></span>
+                            </li>
+                        </menu>
+                    </div>
+
+
+                </td>
+                <td width="{{Center}}" height="100%" class="C_Hide_LegtMenu" ng-click="J_Hide_LeftMenu()">
+                    <div style="color:#fff;">
+                        .<br />.<br />.
+                        <!--左侧菜单隐藏显示-->
+                        <span class="fa fa-angle-left C_Hide_lift_Sj">
+
+                        </span>
+                        .<br />.<br />.
+                    </div>
+
+                </td>
+                <td width="{{Right}}" height="100%">
+                    <div class="N_Body_DaoHang">
+                        Home>模块1>查询
+                    </div>
+                    <div class="N_Body">
+                        <!--主内容块-->
+
+                        @RenderBody()
+                    </div>
+
+                </td>
+            </tr>
+
+        </table>
+    </article>
+</body>
+</html>
+
+
+<script>
+    var App = angular.module("GHPAPP", []);
+    App.controller("GHPCONTROLLER", function ($scope) {
+
+        $scope.Menu = [{ name: "系统管理", icon: "fa fa-cogs", Info: [{ name: "用户管理", url: "#", icon: "fa fa-cogs", Info: [{ name: "用户组", url: "#" }] }, { name: "权限管理", url: "#" }] }, { name: "菜单1", icon: "fa fa-cogs", Info: [{ name: "用户管理", url: "#" }] }]
+
+
+        $scope.C_MenuStatus = true;
+
+        $scope.Left = "15%";
+
+        $scope.Center = "3px";
+
+        $scope.Right = "85%";
+
+        $scope.J_Hide_LeftMenu = function () {
+
+            if ($scope.C_MenuStatus) {
+
+                $scope.C_MenuStatus = false;
+
+                $scope.Left = "2%";
+
+                $scope.Right = "98%";
+
+                $(".C_Hide_lift_Sj").addClass("S_rotateX180");
+                $(".C_Hide_lift_Sj").removeClass("S_rotateX0");
+
+            } else {
+
+                $scope.C_MenuStatus = true;
+
+                $scope.Left = "15%";
+
+                $scope.Right = "85%";
+
+                $(".C_Hide_lift_Sj").addClass("S_rotateX0");
+                $(".C_Hide_lift_Sj").removeClass("S_rotateX180");
+
+            }
+
+        }
+
+
+
+    });
+
+
+</script>

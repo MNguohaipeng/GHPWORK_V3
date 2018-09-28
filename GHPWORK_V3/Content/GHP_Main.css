@@ -1,0 +1,382 @@
+﻿
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 99%;
+}
+
+.G_Main {
+    margin: 0.1%;
+    padding: 0;
+    background-image: url('../Images/Backimg2.jpg');
+    height: 100%;
+}
+
+.G_Header {
+    padding: 14px;
+    background-color: rgba(128, 128, 128, 0.50);
+    color: #fff;
+}
+
+.Left_Menu {
+    background-color: rgba(255, 255, 255, 0.39);
+    margin: 0px;
+    padding: 0px;
+    height: 94%;
+}
+
+.G_Main_Left_Menu_Menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px #fff solid;
+}
+
+
+.G_Left_Meon_Option {
+    height: 83%;
+    width: 5px;
+    background-color: #fff;
+}
+
+.G_Left_Meon_Option {
+    /*position: absolute;
+            top: 5.8%;
+            left: 15%;
+            padding-top: 5%;*/
+}
+
+.N_Menu_Table {
+    width: 100%;
+    height: 95.7%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+    .N_Menu_Table tr {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .N_Menu_Table tr td {
+            margin: 0px;
+            padding: 0px;
+            height: 100%
+        }
+
+    .N_Menu_Table tbody {
+        margin: 0px;
+        padding: 0px;
+        border: 0;
+    }
+
+    .N_Menu_Table tr td {
+        margin: 0px;
+        padding: 0px;
+        border: 0;
+    }
+
+.N_Body {
+    width: 100%;
+    background-color: #fff;
+    height: 95%;
+    overflow: auto;
+}
+
+.N_Header_Ul {
+    list-style: none;
+    margin: 0px;
+    overflow: auto;
+    zoom: 1;
+}
+
+    .N_Header_Ul li {
+        float: left;
+        width: 33.33%;
+    }
+
+.C_Hide_LegtMenu:hover {
+    cursor: pointer;
+}
+/*滚动条样式*/
+.N_Body::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+
+.N_Body::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+
+.N_Body::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+.N_Body_DaoHang {
+    background-color: rgba(175, 215, 211, 0.57);
+    padding: 10px;
+}
+
+.S_rotateX0 {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg); /* Firefox */
+}
+
+
+.S_rotateX10 {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg); /* Firefox */
+}
+
+
+.S_rotateX20 {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg); /* Firefox */
+}
+
+.S_rotateX40 {
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg); /* Firefox */
+}
+
+.S_rotateX60 {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg); /* Firefox */
+}
+
+.S_rotateX80 {
+    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg); /* Firefox */
+}
+
+.S_rotateX100 {
+    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+    -moz-transform: rotate(100deg); /* Firefox */
+}
+
+.S_rotateX120 {
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg); /* Firefox */
+}
+
+.S_rotateX140 {
+    transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg); /* Firefox */
+}
+
+.S_rotateX160 {
+    transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg); /* Firefox */
+}
+
+.S_rotateX180 {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg); /* Firefox */
+}
+
+.S_rotateX200 {
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg); /* Safari and Chrome */
+    -moz-transform: rotate(200deg); /* Firefox */
+}
+
+.C_Hide_lift_Sj {
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.C_Hide_LegtMenu {
+    text-align: center;
+}
+
+.C_Info_Menu_Hide {
+    text-align: center;
+}
+
+
+.G_Main_Left_Hide_Menu_Menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px #fff solid;
+    border-bottom: 0;
+}
+
+
+.G-Main-Left-Menu-Menu-Li {
+    line-height: 40px;
+    border: 1px #fff solid;
+    border-top: 0;
+    border-bottom: 1px #fff solid;
+    border-right: 0;
+}
+
+.G_Main_Ej_Menu {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    list-style: none;
+    line-height: 40px;
+    border-bottom: 0;
+}
+
+    .G_Main_Ej_Menu li {
+        border: 1px #fff solid;
+        border-right: 0;
+        border-bottom: 0;
+        background-color: rgba(175, 215, 211, 0.57);
+    }
+
+.G-Menu-Info {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.G_Main_SAN_Menu {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    list-style: none;
+    line-height: 40px;
+}
+
+    .G_Main_SAN_Menu li {
+        margin: 0px;
+        padding: 0px;
+        border: 1px rgba(255, 255, 255, 0.39) solid;
+        padding-left: 25px;
+        list-style: none;
+        line-height: 30px;
+        border-bottom: 0;
+        border-right: 0;
+        background-color: rgba(174, 169, 239, 0.61)
+    }
+
+/*加载弹窗*/
+@-webkit-keyframes LoadCanChuang {
+    0% {
+        top: -60px;
+    }
+
+    15% {
+        top: -50px;
+    }
+
+    30% {
+        top: -40px;
+    }
+
+    45% {
+        top: -30px;
+    }
+
+    60% {
+        top: -20px;
+    }
+
+    75% {
+        top: -10px;
+    }
+
+    90% {
+        top: 0px;
+    }
+}
+/*隐藏弹窗*/
+@-webkit-keyframes HideCanChuang {
+
+    0% {
+        top: -10px;
+    }
+
+    15% {
+        top: -20px;
+    }
+
+    30% {
+        top: -30px;
+    }
+
+    45% {
+        top: -40px;
+    }
+
+    60% {
+        top: -50px;
+    }
+
+    75% {
+        top: -60px;
+    }
+
+    90% {
+        top: -400px;
+    }
+}
+
+
+.T_Header {
+    background-color:rgba(47, 0, 125, 0.86);
+    padding: 10px;
+    margin: 0px auto;
+    color:#FFF;
+}
+
+.T_Mein {
+    border: 1px rgb(128, 128, 128) solid;
+    width: 35%;
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    -webkit-animation: LoadCanChuang 0.3s;
+    background-color: #fff;
+}
+
+
+
+.B_Success {
+    border: 1px #FFF solid;
+    background-color: rgba(98, 152, 130, 0.61);
+    height: 40px;
+    color: #FFF;
+}
+
+.B_Error {
+    border: 1px #FFF solid;
+    background-color: rgba(157, 74, 74, 0.86);
+    height: 40px;
+    color: #FFF;
+}
+
+.T_Bc_NeoRong {
+
+    height:100px;
+
+}
